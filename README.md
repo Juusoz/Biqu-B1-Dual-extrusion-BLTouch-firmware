@@ -30,3 +30,7 @@ If you want to modify the firmware, I've also listed the configuration files as 
 It does some stringing between the prime tower and the print, which is caused by Cura not wiping the nozzle when leaving the prime tower. There is no feature to change that.
 
 I will update this when Cura improves their dual extrusion. Feel free to modify the profile in the meanwhile, and if you figure out the stringing, please tell me.
+
+4. Open the marketplace and install the "Printer Settings" -plugin, because Cura is dumb and doesn't recognize single nozzle multi-extrusion.
+
+![printer settings](https://user-images.githubusercontent.com/48849652/143481611-24ec0a6e-c3a2-4aef-9f73-48b419885fbb.jpg)
