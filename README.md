@@ -34,3 +34,9 @@ I will update this when Cura improves their dual extrusion. Feel free to modify 
 4. Open the marketplace and install the "Printer Settings" -plugin, because Cura is dumb and doesn't recognize single nozzle multi-extrusion.
 
 ![printer settings](https://user-images.githubusercontent.com/48849652/143481611-24ec0a6e-c3a2-4aef-9f73-48b419885fbb.jpg)
+
+5. In the search bar, type "Extruders share" and tick both Extruders Share Heater and Extruders Share Nozzle.
+
+![extruders share](https://user-images.githubusercontent.com/48849652/143485912-5b816d4c-abc4-4f41-ae4e-2c134c3e822d.jpg)
+
+This will prevent Cura from being stupid and trying to turn off the hotend when one of the extruders is no longer being used.
