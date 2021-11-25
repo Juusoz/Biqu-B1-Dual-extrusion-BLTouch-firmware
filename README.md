@@ -12,7 +12,7 @@ Oh, and if you're still installing the parts, the instructions don't mention it,
 Copy the firmware.bin into an SD card and insert it into the SD card slot in the middle of the printer. The one in the front is for the screen.
 
 # Cura profile
-1.  add a new Custom FFF printer.
+1.  Add a new Custom FFF printer.
 
 ![Cura machine settings 0](https://user-images.githubusercontent.com/48849652/143470194-77956637-4b54-460d-8db9-5b7af5cb0d05.jpg)
 
@@ -27,4 +27,4 @@ Copy the firmware.bin into an SD card and insert it into the SD card slot in the
 
 It does some stringing between the prime tower and the print, which is caused by Cura not wiping the nozzle when leaving the prime tower. There is no feature to change that.
 
-I will update this when Cura improves their dual extrusion.
+I will update this when Cura improves their dual extrusion. Feel free to modify the profile in the meanwhile, and if you figure out the stringing, please tell me.
