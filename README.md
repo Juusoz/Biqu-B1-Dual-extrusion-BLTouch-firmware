@@ -11,6 +11,8 @@ Oh, and if you're still installing the parts, the instructions don't mention it,
 
 Copy the firmware.bin into an SD card and insert it into the SD card slot in the middle of the printer. The one in the front is for the screen.
 
+If you want to modify the firmware, I've also listed the configuration files as well.
+
 # Cura profile
 1.  Add a new Custom FFF printer.
 
