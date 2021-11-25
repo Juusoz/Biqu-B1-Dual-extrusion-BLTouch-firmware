@@ -1,0 +1,55 @@
+M104 S140			;Warming up the nozzle
+G28 			;Home
+G29 			;Bed leveling
+M106 S0			;Turn off fan
+
+G1 Z2 F3000 		; Move Z Axis up little to prevent scratching of Heat Bed
+G1 X2 Y20 Z2 F5000.0 		; Move to start position
+
+
+T0			;Hotend 1
+M109 S{material_print_temperature_layer_0} ;Wait for Extruder temperature
+G92 E0			;Reset extruder position
+G1  E-30 F1200		;Retract filament
+G92 E0			;Reset extruder position
+
+T1			;Hotend 2
+M109 S{material_print_temperature_layer_0} ;Wait for Extruder temperature
+G92 E0			;Reset extruder position
+
+M117 Purging
+M150 B255 R255 U255		;Turn on LED
+
+G1 Z0.3 F5000.0		;Bring the nozzle down
+G1 X2 Y200.0 Z0.3 F1500.0 E10	;Draw the first line
+G1 X2.3 Y200.0 Z0.3 F5000.0	;Move to side a little
+G1 X2.3 Y20 Z0.3 F1500.0 E20	;Draw the second line
+G1 X2.6 Y20 Z0.3 F5000.0 	;Move to side a little
+G1 X2.6 Y200.0 Z0.3 F1500.0 E30 	;Draw the third line
+G1 X2.9 Y200.0 Z0.3 F5000.0 	;Move to side a little
+G1 X2.9 Y20 Z0.3 F1500.0 E40 	;Draw the fourth line
+G1 X3.2 Y20 Z0.3 F5000.0 	;Move to side a little
+G1 X3.2 Y200.0 Z0.3 F1500.0 E50 	;Draw the fifth line
+G92 E0
+
+T1			;Hotend 2
+G1 F1200 E-30		;Retract filament
+G92 E0			;Reset extruder position
+
+T0			;Hotend 1
+G92 E0			;Reset extruder position
+G1 F1200 E30		;Extrude filament
+G92 E0			;Reset extruder position
+
+G1 X3.8 Y200 Z0.3 F5000.0	;Move to side a little
+G1 X3.8 Y20.0 Z0.3 F1500.0 E10	;Draw the first line
+G1 X4.1 Y20.0 Z0.3 F5000.0	;Move to side a little
+G1 X4.1 Y200 Z0.3 F1500.0 E20	;Draw the second line
+G1 X4.4 Y200 Z0.3 F5000.0	;Move to side a little
+G1 X4.4 Y20.0 Z0.3 F1500.0 E30	;Draw the third line
+G1 X4.7 Y20.0 Z0.3 F5000.0	;Move to side a little
+G1 X4.7 Y200 Z0.3 F1500.0 E40	;Draw the fourth line
+G1 X5.0 Y200 Z0.3 F5000.0	;Move to side a little
+G1 X5.0 Y20.0 Z0.3 F1500.0 E50	;Draw the fifth line
+G92 E0			;Reset extruder position
+G1 E-1 F600			;Retract a bit
