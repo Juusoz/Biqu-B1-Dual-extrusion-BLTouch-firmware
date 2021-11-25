@@ -1,7 +1,7 @@
 # Biqu B1 Dual extrusion BLTouch firmware
 
 The default firmware for the Biqu B1 Dual extrusion upgrade kit did not have support for BLTouch, for some reason, so I rewrote it.
-Hopefully this will save you some time instead of having to compile it yourself. I've also included an improved version of the Cura profile, although Cura is still quite bad at supporting multi-extrusion printers.
+Hopefully this will save you some time instead of having to compile it yourself. I've also included an improved versions of the Cura profile, although Cura is still quite bad at supporting multi-extrusion printers.
 
 Oh, and if you're still installing the parts, the instructions don't mention it, but you need to open up the bottom panel of your printer and put the motor cable in the rightmost slot in the motherboard and the motor driver next to the rest. **Make sure you put the red in red and black in black or else you'll fry your motherboard!**
 
@@ -17,7 +17,7 @@ Oh, and if you're still installing the parts, the instructions don't mention it,
 ![Cura machine settings](https://user-images.githubusercontent.com/48849652/143470296-1d4a0af4-e1d4-4532-aa34-9cb660b937b0.jpg)
 ![Cura machine settings 2](https://user-images.githubusercontent.com/48849652/143470303-bda7a373-bc3c-4cc1-a749-26d6108e51a9.jpg)
 
-3. Import the Cura profile (Preferences -> Configure Cura -> Profiles)
+3. Import the Cura profiles (Preferences -> Configure Cura -> Profiles)
 
 ![Cura Profile import](https://user-images.githubusercontent.com/48849652/143470844-804f33a5-c793-4707-a500-206edd3000c2.jpg)
 
