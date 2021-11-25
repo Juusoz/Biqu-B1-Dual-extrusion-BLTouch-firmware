@@ -7,6 +7,10 @@ Oh, and if you're still installing the parts, the instructions don't mention it,
 
 ![motherboard](https://user-images.githubusercontent.com/48849652/143468011-89eeb33e-20a5-4c28-b93d-4e5a31a3607b.jpg)
 
+# Firmware
+
+Copy the firmware.bin into an SD card and insert it into the SD card slot in the middle of the printer. The one in the front is for the screen.
+
 # Cura profile
 1.  add a new Custom FFF printer.
 
