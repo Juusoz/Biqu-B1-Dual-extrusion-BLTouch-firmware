@@ -1,7 +1,7 @@
 # Biqu B1 Dual extrusion BLTouch firmware
 
 The default firmware for the Biqu B1 Dual extrusion upgrade kit did not have support for BLTouch, for some reason, so I rewrote it.
-Hopefully this will save you some time instead of having to compile it yourself. As for slicer, **I'd recommend using [SuperSlicer](https://github.com/supermerill/SuperSlicer/releases)**, but I've also included an improved version of the Cura profile, even though Cura is still terrible at supporting multi-extrusion printers.
+Hopefully this will save you some time instead of having to compile it yourself. As for slicer, **I'd recommend using [SuperSlicer](https://github.com/supermerill/SuperSlicer/releases)**, but I've also included an improved version of the Cura profile, even though Cura is terrible at supporting multi-extrusion printers.
 
 Oh, and if you're still installing the parts, the instructions don't mention it, but you need to open up the bottom panel of your printer and put the motor cable in the rightmost slot in the motherboard and the motor driver next to the rest. **Make sure you put the red in red and black in black or else you'll fry your motherboard!**
 
