@@ -1,7 +1,7 @@
 # Biqu B1 Dual extrusion BLTouch firmware
 
 The default firmware for the Biqu B1 Dual extrusion upgrade kit did not have support for BLTouch, for some reason, so I rewrote it.
-Hopefully this will save you some time instead of having to compile it yourself. I've also included an improved versions of the Cura profile, although Cura is still quite bad at supporting multi-extrusion printers.
+Hopefully this will save you some time instead of having to compile it yourself. As for slicer, **I'd recommend using [SuperSlicer](https://github.com/supermerill/SuperSlicer/releases)**, but I've also included an improved version of the Cura profile, even though Cura is still terrible at supporting multi-extrusion printers.
 
 Oh, and if you're still installing the parts, the instructions don't mention it, but you need to open up the bottom panel of your printer and put the motor cable in the rightmost slot in the motherboard and the motor driver next to the rest. **Make sure you put the red in red and black in black or else you'll fry your motherboard!**
 
@@ -12,6 +12,15 @@ Oh, and if you're still installing the parts, the instructions don't mention it,
 Copy the firmware.bin into an SD card and insert it into the SD card slot in the middle of the printer. The one in the front is for the screen.
 
 If you want to modify the firmware, I've also listed the configuration files as well.
+
+# SuperSlicer profile
+1. Go to File -> Import -> Import Config Bundle... and load in the SuperSlicer_config_bundle.ini file
+
+![superslicer](https://user-images.githubusercontent.com/48849652/146986880-61d8802c-e153-4d43-8244-4c205acc34eb.jpg)
+
+You're done. Happy printing!
+
+
 
 # Cura profile
 1.  Add a new Custom FFF printer.
@@ -40,3 +49,5 @@ I will update this when Cura improves their dual extrusion. Feel free to modify 
 ![extruders share](https://user-images.githubusercontent.com/48849652/143485912-5b816d4c-abc4-4f41-ae4e-2c134c3e822d.jpg)
 
 This will prevent Cura from being stupid and trying to turn off the hotend when one of the extruders is no longer being used.
+
+I'd really recommend you use SuperSlicer instead, the user interface is better and so is the print quality. And this is coming from a guy who used nothing but Cura for the past 2 years.
